@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title_block %}Change Profile Profile {% endblock %}
+{% block body_block %}
+<h2>Change Profile Picture</h2>
+
+<form method="POST" action="" entype ="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" name="submit" class="bt btn-primary btn-sm">Add</button>
+
+</form>
+
+
+
+
+
+{% endblock body_block %}
